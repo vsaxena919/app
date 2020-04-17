@@ -1,0 +1,19 @@
+2020-04-15T01:45:07+00:00 CRITICAL Uncaught Error: Unsupported operand types in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/contact-form-7-mailchimp-extension/lib/handler.php:89
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(288): wpcf7_mch_save_mailchimp(Object(WPCF7_ContactForm))
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/contact-form-7/includes/contact-form.php(896): do_action('wpcf7_after_sav...', Object(WPCF7_ContactForm))
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/contact-form-7/settings.php(148): WPCF7_ContactForm->save()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(286): wpcf7_install()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plu in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/contact-form-7-mailchimp-extension/lib/handler.php on line 89
+
+2020-04-15T09:08:19+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:675
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php(599): ActionScheduler_DBStore->claim_actions(0, 25, NULL, Array, '')
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(154): ActionScheduler_DBStore->stake_claim(25)
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(133): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(288): ActionScheduler_QueueRunner->run('WP Cron')
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(312): WP_Hook->apply_f in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php on line 675
+

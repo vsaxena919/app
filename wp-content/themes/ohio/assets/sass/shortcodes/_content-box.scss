@@ -1,0 +1,7 @@
+.content_box {
+
+	&_container {
+		@include animate(border-color);
+	}
+}
+	

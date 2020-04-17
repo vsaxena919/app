@@ -1,0 +1,18 @@
+
+---Downloaded files---
+The import files for: Blog Page were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://13.234.239.77
+Data file = /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/2020/04/demo-content-import-file_2020-04-15__00-44-07.xml
+Widget file = not defined!
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---pt-ocdi/after_import---
+
